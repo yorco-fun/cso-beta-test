@@ -5,7 +5,7 @@ from blog.models import Articles
 from main.models import FAQ, Vacancy
 from tariffs.models import Tariffs
 
-# @method_decorator(cache_page(60 * 30), name='dispatch')
+@method_decorator(cache_page(60 * 30), name='dispatch')
 class IndexView(TemplateView):
     template_name = 'main/index.html'
 
