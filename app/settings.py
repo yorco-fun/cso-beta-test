@@ -89,8 +89,12 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cso_5mw6',
+        'USER': 'cso_5mw6_user',
+        'PASSWORD': 'uYcz8EGwi81V9tOJ9SZ25kTZcelbmWic',
+        'HOST': 'dpg-csejtp3tq21c738delm0-a.oregon-postgres.render.com',
+        'PORT': '5432',  # або залиште порожнім, якщо Render надає стандартний порт
     }
 }
 
